@@ -1,6 +1,6 @@
 ﻿namespace LT
 {
-    partial class Form1
+    partial class Menu
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             this.lstNaam = new System.Windows.Forms.ListBox();
             this.lblNaam = new System.Windows.Forms.Label();
             this.btnStart = new System.Windows.Forms.Button();
@@ -88,7 +88,6 @@
             this.lblNaam.Size = new System.Drawing.Size(468, 64);
             this.lblNaam.TabIndex = 4;
             this.lblNaam.Text = "Hallo! Wie ben jij?";
-            this.lblNaam.Click += new System.EventHandler(this.lblNaam_Click);
             // 
             // btnStart
             // 
@@ -207,7 +206,6 @@
             this.pictureBox3.Size = new System.Drawing.Size(772, 311);
             this.pictureBox3.TabIndex = 12;
             this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // Form1
             // 
@@ -234,8 +232,8 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Padding = new System.Windows.Forms.Padding(4);
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

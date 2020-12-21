@@ -10,18 +10,13 @@ using System.Windows.Forms;
 
 namespace LT
 {
-    public partial class Form1 : Form
+    public partial class Menu : Form
     {
         public static string SetName = "";
 
-        public Form1()
+        public Menu()
         {
             InitializeComponent();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void btnStart_Click(object sender, EventArgs e)
@@ -33,9 +28,9 @@ namespace LT
             }
             else
             {
-                string temp = lstNaam.GetItemText(lstNaam.SelectedItem) + "!";
+                var temp = lstNaam.GetItemText(lstNaam.SelectedItem) + "!";
                 SetName = temp.Remove(0, 5);
-                Form2 frm2 = new Form2();
+                var frm2 = new Game();
                 frm2.Show();
                 lstNaam.ClearSelected();
                 lstNaam.BackColor = Color.DodgerBlue;
@@ -46,16 +41,6 @@ namespace LT
         private void btnAfsluiten_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void lblNaam_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

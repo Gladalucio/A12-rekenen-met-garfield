@@ -10,19 +10,17 @@ using System.Windows.Forms;
 
 namespace LT
 {
-    public partial class Form2 : Form
+    public partial class Game : Form
     {
         public static int iGoed;
         public static int iFout;
-        int iAnswer;
         int iRandom;
         int iOud = 11;
         int iRonde = 1;
 
         PictureBox[] marbles = new PictureBox[10];
 
-
-        public Form2()
+        public Game()
         {
             InitializeComponent();
         }
@@ -30,7 +28,7 @@ namespace LT
         // NAAM
         private void Form2_Load(object sender, EventArgs e)
         {
-            lblNaam.Text = Form1.SetName;
+            lblNaam.Text = LT.Menu.SetName;
 
             marbles[0] = Marble1;
             marbles[1] = Marble2;
@@ -45,84 +43,24 @@ namespace LT
 
             Random();
         }
-        // BUTTONS
-        private void button1_Click(object sender, EventArgs e)
+
+        private void answer_Click(object sender, EventArgs e)
         {
-            iAnswer = 1;
-            Answer();
+            Answer(int.Parse((sender as Button).Text));
         }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            iAnswer = 2;
-            Answer();
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            iAnswer = 3;
-            Answer();
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            iAnswer = 4;
-            Answer();
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            iAnswer = 5;
-            Answer();
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-            iAnswer = 6;
-            Answer();
-        }
-
-        private void button7_Click(object sender, EventArgs e)
-        {
-            iAnswer = 7;
-            Answer();
-        }
-
-        private void button8_Click(object sender, EventArgs e)
-        {
-            iAnswer = 8;
-            Answer();
-        }
-
-        private void button9_Click(object sender, EventArgs e)
-        {
-            iAnswer = 9;
-            Answer();
-        }
-
-        private void button10_Click(object sender, EventArgs e)
-        {
-            iAnswer = 10;
-            Answer();
-        }
-       
-        // END BUTTONS
-
-
-        // BEREKENING
 
         private void Random()
         {
-            if (iRonde < 11)
+            if (iRonde <= 10)
             {
-                // Verbergt alle knikkers
-                for (int reset = 1; reset < 10; reset++)
+                // Hides all marbles
+                for (var reset = 1; reset < 10; reset++)
                 {
                     marbles[reset].Hide();
                 }
 
-                // Genereert een random getal
-                Random rng = new System.Random();
+                // Generates a random number
+                var rng = new System.Random();
                 iRandom = rng.Next(1, 10);
 
                 if (iOud == iRandom)
@@ -131,16 +69,16 @@ namespace LT
                 }
                 else
                 {
-                    for (int iRandom2 = iRandom; iRandom2 >= 1; iRandom2--)
+                    for (var iRandom2 = iRandom; iRandom2 >= 1; iRandom2--)
                     {
                         marbles[iRandom2-1].Show();
-                        // de "-1" staat er in, anders wordt de eerste Garfield-foto genegeerd en start alles vanaf de 2e
+                        // "-1" is there so that the first Garfield-image is ignored and they all start from the second
                     }
                     lblRonde.Text = iRonde.ToString();
                     iRonde++;
 
                     iOud = iRandom;
-                    // Dit is zodat je niet meerdere keren dezelfde krijgt
+                    // Prevents the same number from showing twice
                 }
 
             }
@@ -172,17 +110,11 @@ namespace LT
                 button8.Enabled = false;
                 button9.Enabled = false;
                 button10.Enabled = false;
-                // Dit is zodat de gebruiker niet per ongeluk door blijft drukken
+                // Prevents the player from pressing buttons after the game is done
             }
-
-            
-
-            //for (int iRandom = rng.Next (0, 9); iRandom >= 0; iRandom--)
-
-            // MessageBox.Show(iRandom.ToString());
         }
 
-        private void Answer()
+        private void Answer(int iAnswer)
         {
             if (iRandom == iAnswer)
             {
@@ -198,9 +130,10 @@ namespace LT
             }
             Random();
         }
+
         private void btnReactie_Click(object sender, EventArgs e)
         {
-            Form3 frm3 = new Form3();
+            var frm3 = new GameEnd();
             frm3.Show();
             this.Close();
         }

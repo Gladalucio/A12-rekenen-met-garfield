@@ -1,6 +1,6 @@
 ﻿namespace LT
 {
-    partial class Form3
+    partial class GameEnd
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GameEnd));
             this.lblGoed = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.lblFout = new System.Windows.Forms.Label();
@@ -53,12 +53,11 @@
             this.lblGoed.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblGoed.Font = new System.Drawing.Font("Modern No. 20", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGoed.ForeColor = System.Drawing.Color.Blue;
-            this.lblGoed.Location = new System.Drawing.Point(843, 518);
-            this.lblGoed.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblGoed.MaximumSize = new System.Drawing.Size(65, 44);
-            this.lblGoed.MinimumSize = new System.Drawing.Size(62, 41);
+            this.lblGoed.Location = new System.Drawing.Point(632, 421);
+            this.lblGoed.MaximumSize = new System.Drawing.Size(49, 36);
+            this.lblGoed.MinimumSize = new System.Drawing.Size(47, 34);
             this.lblGoed.Name = "lblGoed";
-            this.lblGoed.Size = new System.Drawing.Size(62, 43);
+            this.lblGoed.Size = new System.Drawing.Size(49, 36);
             this.lblGoed.TabIndex = 0;
             this.lblGoed.Text = "10";
             // 
@@ -68,10 +67,9 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Modern No. 20", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Blue;
-            this.button1.Location = new System.Drawing.Point(761, 674);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Location = new System.Drawing.Point(571, 548);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(147, 46);
+            this.button1.Size = new System.Drawing.Size(110, 37);
             this.button1.TabIndex = 1;
             this.button1.Text = "Terug";
             this.button1.UseVisualStyleBackColor = false;
@@ -84,12 +82,11 @@
             this.lblFout.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblFout.Font = new System.Drawing.Font("Modern No. 20", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFout.ForeColor = System.Drawing.Color.Blue;
-            this.lblFout.Location = new System.Drawing.Point(843, 577);
-            this.lblFout.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblFout.MaximumSize = new System.Drawing.Size(65, 41);
-            this.lblFout.MinimumSize = new System.Drawing.Size(65, 41);
+            this.lblFout.Location = new System.Drawing.Point(632, 469);
+            this.lblFout.MaximumSize = new System.Drawing.Size(49, 34);
+            this.lblFout.MinimumSize = new System.Drawing.Size(49, 34);
             this.lblFout.Name = "lblFout";
-            this.lblFout.Size = new System.Drawing.Size(65, 41);
+            this.lblFout.Size = new System.Drawing.Size(49, 34);
             this.lblFout.TabIndex = 2;
             this.lblFout.Text = "10";
             // 
@@ -98,10 +95,9 @@
             this.picSad1.BackColor = System.Drawing.Color.Transparent;
             this.picSad1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picSad1.BackgroundImage")));
             this.picSad1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picSad1.Location = new System.Drawing.Point(611, 100);
-            this.picSad1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.picSad1.Location = new System.Drawing.Point(458, 81);
             this.picSad1.Name = "picSad1";
-            this.picSad1.Size = new System.Drawing.Size(301, 373);
+            this.picSad1.Size = new System.Drawing.Size(226, 303);
             this.picSad1.TabIndex = 3;
             this.picSad1.TabStop = false;
             this.picSad1.Visible = false;
@@ -112,10 +108,9 @@
             this.lblConclusie.BackColor = System.Drawing.Color.Cyan;
             this.lblConclusie.Font = new System.Drawing.Font("Modern No. 20", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblConclusie.ForeColor = System.Drawing.Color.Blue;
-            this.lblConclusie.Location = new System.Drawing.Point(33, 39);
-            this.lblConclusie.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblConclusie.Location = new System.Drawing.Point(25, 32);
             this.lblConclusie.Name = "lblConclusie";
-            this.lblConclusie.Size = new System.Drawing.Size(823, 41);
+            this.lblConclusie.Size = new System.Drawing.Size(668, 34);
             this.lblConclusie.TabIndex = 4;
             this.lblConclusie.Text = "Wat jammer! Volgende keer maken wij hem beter!";
             // 
@@ -125,10 +120,9 @@
             this.label1.BackColor = System.Drawing.Color.Cyan;
             this.label1.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Blue;
-            this.label1.Location = new System.Drawing.Point(605, 533);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(454, 433);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(209, 29);
+            this.label1.Size = new System.Drawing.Size(157, 24);
             this.label1.TabIndex = 6;
             this.label1.Text = "Antwoorden goed:";
             // 
@@ -138,10 +132,9 @@
             this.label2.BackColor = System.Drawing.Color.Cyan;
             this.label2.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Blue;
-            this.label2.Location = new System.Drawing.Point(605, 587);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(454, 477);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(205, 29);
+            this.label2.Size = new System.Drawing.Size(154, 24);
             this.label2.TabIndex = 7;
             this.label2.Text = "Antwoorden fout:";
             // 
@@ -151,10 +144,9 @@
             this.lblConclusie2.BackColor = System.Drawing.Color.Cyan;
             this.lblConclusie2.Font = new System.Drawing.Font("Modern No. 20", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblConclusie2.ForeColor = System.Drawing.Color.Blue;
-            this.lblConclusie2.Location = new System.Drawing.Point(33, 81);
-            this.lblConclusie2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblConclusie2.Location = new System.Drawing.Point(25, 66);
             this.lblConclusie2.Name = "lblConclusie2";
-            this.lblConclusie2.Size = new System.Drawing.Size(490, 41);
+            this.lblConclusie2.Size = new System.Drawing.Size(400, 34);
             this.lblConclusie2.TabIndex = 8;
             this.lblConclusie2.Text = "Garfield weet dat je het kunt!";
             // 
@@ -163,10 +155,9 @@
             this.picSad2.BackColor = System.Drawing.Color.Transparent;
             this.picSad2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picSad2.BackgroundImage")));
             this.picSad2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picSad2.Location = new System.Drawing.Point(41, 165);
-            this.picSad2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.picSad2.Location = new System.Drawing.Point(31, 134);
             this.picSad2.Name = "picSad2";
-            this.picSad2.Size = new System.Drawing.Size(472, 555);
+            this.picSad2.Size = new System.Drawing.Size(354, 451);
             this.picSad2.TabIndex = 9;
             this.picSad2.TabStop = false;
             this.picSad2.Visible = false;
@@ -176,10 +167,9 @@
             this.picHappy1.BackColor = System.Drawing.Color.Transparent;
             this.picHappy1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picHappy1.BackgroundImage")));
             this.picHappy1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picHappy1.Location = new System.Drawing.Point(611, 100);
-            this.picHappy1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.picHappy1.Location = new System.Drawing.Point(458, 81);
             this.picHappy1.Name = "picHappy1";
-            this.picHappy1.Size = new System.Drawing.Size(301, 373);
+            this.picHappy1.Size = new System.Drawing.Size(226, 303);
             this.picHappy1.TabIndex = 10;
             this.picHappy1.TabStop = false;
             this.picHappy1.Visible = false;
@@ -189,20 +179,19 @@
             this.picHappy2.BackColor = System.Drawing.Color.Transparent;
             this.picHappy2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picHappy2.BackgroundImage")));
             this.picHappy2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picHappy2.Location = new System.Drawing.Point(41, 165);
-            this.picHappy2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.picHappy2.Location = new System.Drawing.Point(31, 134);
             this.picHappy2.Name = "picHappy2";
-            this.picHappy2.Size = new System.Drawing.Size(525, 555);
+            this.picHappy2.Size = new System.Drawing.Size(394, 451);
             this.picHappy2.TabIndex = 11;
             this.picHappy2.TabStop = false;
             this.picHappy2.Visible = false;
             // 
             // Form3
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Fuchsia;
-            this.ClientSize = new System.Drawing.Size(949, 741);
+            this.ClientSize = new System.Drawing.Size(712, 602);
             this.Controls.Add(this.picHappy2);
             this.Controls.Add(this.picHappy1);
             this.Controls.Add(this.picSad2);
@@ -215,8 +204,8 @@
             this.Controls.Add(this.picSad1);
             this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form3";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form3";
             this.Load += new System.EventHandler(this.Form3_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picSad1)).EndInit();

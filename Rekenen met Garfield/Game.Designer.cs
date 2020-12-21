@@ -1,6 +1,6 @@
 ﻿namespace LT
 {
-    partial class Form2
+    partial class Game
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Game));
             this.Marble1 = new System.Windows.Forms.PictureBox();
             this.Marble2 = new System.Windows.Forms.PictureBox();
             this.Marble3 = new System.Windows.Forms.PictureBox();
@@ -288,7 +288,7 @@
             this.button3.Text = "3";
             this.button3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button3.Click += new System.EventHandler(this.answer_Click);
             // 
             // button4
             // 
@@ -309,7 +309,7 @@
             this.button4.Text = "4";
             this.button4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.button4.Click += new System.EventHandler(this.answer_Click);
             // 
             // button5
             // 
@@ -330,7 +330,7 @@
             this.button5.Text = "5";
             this.button5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.button5.Click += new System.EventHandler(this.answer_Click);
             // 
             // button6
             // 
@@ -351,7 +351,7 @@
             this.button6.Text = "6";
             this.button6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.button6.Click += new System.EventHandler(this.answer_Click);
             // 
             // button7
             // 
@@ -372,7 +372,7 @@
             this.button7.Text = "7";
             this.button7.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button7.UseVisualStyleBackColor = false;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.button7.Click += new System.EventHandler(this.answer_Click);
             // 
             // button8
             // 
@@ -393,7 +393,7 @@
             this.button8.Text = "8";
             this.button8.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button8.UseVisualStyleBackColor = false;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
+            this.button8.Click += new System.EventHandler(this.answer_Click);
             // 
             // button9
             // 
@@ -414,7 +414,7 @@
             this.button9.Text = "9";
             this.button9.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button9.UseVisualStyleBackColor = false;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
+            this.button9.Click += new System.EventHandler(this.answer_Click);
             // 
             // button10
             // 
@@ -435,7 +435,7 @@
             this.button10.Text = "10";
             this.button10.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button10.UseVisualStyleBackColor = false;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
+            this.button10.Click += new System.EventHandler(this.answer_Click);
             // 
             // button1
             // 
@@ -456,7 +456,7 @@
             this.button1.Text = "1";
             this.button1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.answer_Click);
             // 
             // button2
             // 
@@ -477,7 +477,7 @@
             this.button2.Text = "2";
             this.button2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.Click += new System.EventHandler(this.answer_Click);
             // 
             // picHappy
             // 
@@ -760,7 +760,7 @@
             this.btnAfsluiten.UseVisualStyleBackColor = false;
             this.btnAfsluiten.Click += new System.EventHandler(this.btnAfsluiten_Click);
             // 
-            // Form2
+            // Game
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
@@ -819,7 +819,8 @@
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form2";
+            this.Name = "Game";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Marble1)).EndInit();

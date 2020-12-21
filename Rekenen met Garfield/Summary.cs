@@ -10,12 +10,11 @@ using System.Windows.Forms;
 
 namespace LT
 {
-    public partial class Form3 : Form
+    public partial class GameEnd : Form
     {
-        int iGoed = Form2.iGoed;
-        int iFout = Form2.iFout;
+        int iGoed = Game.iGoed;
 
-        public Form3()
+        public GameEnd()
         {
             InitializeComponent();
         }
@@ -23,7 +22,7 @@ namespace LT
         private void Form3_Load(object sender, EventArgs e)
         {
             lblGoed.Text = iGoed.ToString();
-            lblFout.Text = Form2.iFout.ToString();
+            lblFout.Text = Game.iFout.ToString();
             Start();
         }
 
@@ -43,13 +42,11 @@ namespace LT
                 picHappy1.Visible = true;
                 picHappy2.Visible = true;
             }
-
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
     }
 }
